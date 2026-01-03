@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Project specific
+.module_hashes.json
+
+# Config - alle außer Beispiel ignorieren
+config/*
+!config/config.example.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/

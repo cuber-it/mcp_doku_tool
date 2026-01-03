@@ -1,0 +1,35 @@
+# MCP Doku Tool Konfiguration
+
+project:
+  # Wurzelverzeichnis des zu dokumentierenden Projekts
+  root: "/path/to/your/project"
+  # Unterverzeichnis mit dem Code
+  lib_subdir: "lib"
+  # Dateiendung der Module
+  file_extension: ".pm"
+  # Trennzeichen in Modulnamen (Perl: "::", Python: ".")
+  module_separator: "::"
+
+docs:
+  # Wo die Dokumentation gespeichert wird
+  root: "~/Documents/project-docs"
+  # Erlaubte Dokumentationstypen
+  types:
+    - module
+    - table
+    - flow
+    - note
+
+server:
+  # Name des MCP-Servers
+  name: "doku-tool"
+  # Transport: "stdio" oder "http"
+  transport: "stdio"
+  # Port für HTTP-Modus
+  http_port: 8080
+
+limits:
+  # Maximale Dateigröße für Ausgabe (Zeichen)
+  max_file_size: 15000
+  # Maximale Anzahl Suchergebnisse
+  max_results: 30
